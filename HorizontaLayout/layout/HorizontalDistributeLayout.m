@@ -114,9 +114,6 @@ NSString *const GPWCollectionElementKindSectionFooter = @"GPWCollectionElementKi
                 CGSize size = [self.delegate collectionView:self.collectionView layout:self sizeForItemAtIndexPath:indexPath];
                 itemWidth = size.width;
                 itemHeight = size.height;
-                if (top + itemHeight >= _viewHeight) {
-                    _viewHeight = top + itemHeight;
-                }
             }
             
             if (rowWidth + itemWidth > width - sectionInset.right) {
